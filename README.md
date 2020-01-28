@@ -83,9 +83,8 @@ Fade out using css opacity
   vector1.addTo('container');
   vector1.spin();
   setTimeout(() => vector1.shrink(), 3000);
-  setTimeout(() => vector1.text(100,100,'Hello Skillshare','font-size: 100px;'), 4000);
   setTimeout(() => {
-    vector2.text(50,450,'Skillshare','font-size: 400px; font-family: Arial;');
+    vector2.text(50,450,'Hello World','font-size: 400px; font-family: Arial;');
     vector2.addTo('container');
     setTimeout(() => vector2.fadeOut(),4000);
   }, 5000);

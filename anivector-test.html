@@ -29,18 +29,11 @@
   <div id="container"></div>
 <script>
   const vector1 = new Anivector();
-  const vector2 = new Anivector();
   vector1.circle(540,520,300);
   vector1.rectangle(940,220,600,600);
   vector1.addTo('container');
   vector1.spin();
   setTimeout(() => vector1.shrink(), 3000);
-  setTimeout(() => vector1.text(100,100,'Hello Skillshare','font-size: 100px;'), 4000);
-  setTimeout(() => {
-    vector2.text(50,450,'Skillshare','font-size: 400px; font-family: Arial;');
-    vector2.addTo('container');
-    setTimeout(() => vector2.fadeOut(),4000);
-  }, 5000);
 </script>
 </body>
 </html>
