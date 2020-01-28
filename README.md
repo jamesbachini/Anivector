@@ -1,6 +1,48 @@
 # Anivector
  Animate vector graphics using Javascript and CSS - anivector.js
 
+## Methods 
+
+### clear ()
+Clears vector contents
+
+### addTo (targetId)
+Adds vector to container with target ID i.e. <div id="xyz"></div>
+
+### vector ()
+Output vector - print to string
+
+### circle (x,y,radius,style=``,id=false)
+Create a circle using x,y cordinates for center point and a radius
+
+### rectangle (x,y,width,height,style=``,id=false)
+Create a rectangle or square with x,y cordinates plus width and height
+
+### path (d,style=``,id=false)
+Create a path using a d variable string.
+For more info see: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+
+### text (x,y,text,style=``,id=false)
+Create some text
+
+### shrink (scale=1,speed=15)
+Shrink the vector using css transform: scale()
+Optional scale and speed variables
+
+### grow (scale=0,max=1,speed=15)
+Grow the vector using css transform: scale()
+Scale is starting point, max is end point 1 = full.
+
+### spin (rotation=0,speed=15)
+Spin the vector constantly using css transform: rotate(xdeg)
+
+### fadeIn (opacity,max=1)
+Fade in using css opacity
+
+### fadeOut (opacity=1)
+Fade out using css opacity
+
+
 ## Example
 
 ```
